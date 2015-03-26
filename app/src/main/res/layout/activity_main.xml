@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/grey_book" />
+
+    <Button
+        android:id="@+id/menu_btnAutor"
+        android:layout_width="@dimen/menu_btnWidth"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_btnAutor"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/menu_btnLibro"
+        android:layout_width="@dimen/menu_btnWidth"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_btnLibros"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/menu_btnConsulta"
+        android:layout_width="@dimen/menu_btnWidth"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_btnConsulta"
+        android:onClick="onClick"/>
+
+</LinearLayout>

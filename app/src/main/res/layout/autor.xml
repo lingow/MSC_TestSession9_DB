@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <SearchView
+        android:id="@+id/autor_searchView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </SearchView>
+
+    <EditText
+        android:id="@+id/autor_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/autor_txtId"
+        android:inputType="numberSigned" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/autor_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/autor_txtNombre"
+        android:inputType="textPersonName|textCapWords" />
+
+    <Spinner
+        android:id="@+id/autor_pais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/autor_extra"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/autor_txtExtra"
+        android:inputType="textMultiLine|textCapSentences" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarButtonStyle"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/autor_btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnGuardar" 
+            android:onClick="onClick"
+            />
+
+        <Button
+            android:id="@+id/autor_btnBorrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/btnBorrar" 
+            android:onClick="onClick"
+            />
+
+        <Button
+            android:id="@+id/autor_btnNuevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnNuevo" 
+            android:onClick="onClick"
+            />
+    </LinearLayout>
+
+</LinearLayout>
